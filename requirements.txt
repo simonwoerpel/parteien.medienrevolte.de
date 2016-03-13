@@ -1,7 +1,9 @@
 Django==1.9.4
 nltk==3.2
+numpy==1.10.4
+Pillow==3.1.1
 pyaml==15.8.2
 PyYAML==3.11
-simplejson==3.8.2
 textblob==0.11.1
 textblob-de==0.4.2
+wordcloud==1.2.1
