@@ -1,0 +1,51 @@
+<h3>{{ party.name }}</h3>
+
+<a href="{{ party.wordcloud_url }}">
+  <img class="img-responsive img-thumbnail" src="{{ party.wordcloud_url }}">
+</a>
+
+{% with party.data as data %}
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    {% include "app/corpus_stats.html" with stats=data.stats %}
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Häufigste Wörter</h3>
+  </div>
+  <div class="panel-body">
+    {% include "app/occurences_table.html" with words=data.words %}
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Formulierungen</h3>
+  </div>
+  <div class="panel-body">
+    {% include "app/occurences_table.html" with words=data.phrases %}
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">2-Grams</h3>
+  </div>
+  <div class="panel-body">
+    {% include "app/occurences_table.html" with words=data.2grams %}
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">3-Grams</h3>
+  </div>
+  <div class="panel-body">
+    {% include "app/occurences_table.html" with words=data.3grams %}
+  </div>
+</div>
+
+{% endwith %}

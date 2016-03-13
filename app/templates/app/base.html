@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'app/content.html' %}
+
+<hr>
+
+{% for state in states %}
+<h1 id="{{ state.slug }}">{{ state }}</h1>
+  <div class="row">
+  {% for party in state.parties %}
+    <div class="col-md-2">
+    {% include 'app/party.html' with party=party %}
+    </div>
+  {% endfor %}
+  </div>
+{% endfor %}
+
+{% include 'app/footer.html' %}
+
+{% endblock %}

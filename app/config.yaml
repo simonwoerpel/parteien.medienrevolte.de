@@ -22,22 +22,22 @@ states:
                 start_page: 1
                 end_page: 200
             gruene:
-                name: gruene
+                name: Grüne
                 file: 2016_sn_gruene
                 start_page: 1
                 end_page: 200
             linke:
-                name: linke
+                name: Die Linke
                 file: 2016_sn_linke
                 start_page: 1
                 end_page: 200
             afd:
-                name: afd
+                name: AfD
                 file: 2016_sn_afd
                 start_page: 1
                 end_page: 200
             fdp:
-                name: fdp
+                name: FDP
                 file: 2016_sn_fdp
                 start_page: 1
                 end_page: 200
@@ -55,22 +55,22 @@ states:
                 start_page: 1
                 end_page: 200
             gruene:
-                name: gruene
+                name: Grüne
                 file: 2016_bw_gruene
                 start_page: 1
                 end_page: 200
             linke:
-                name: linke
+                name: Die Linke
                 file: 2016_bw_linke
                 start_page: 1
                 end_page: 200
             afd:
-                name: afd
+                name: AfD
                 file: 2016_bw_afd
                 start_page: 1
                 end_page: 200
             fdp:
-                name: fdp
+                name: FDP
                 file: 2016_bw_fdp
                 start_page: 1
                 end_page: 200
@@ -88,22 +88,22 @@ states:
                 start_page: 1
                 end_page: 200
             gruene:
-                name: gruene
+                name: Grüne
                 file: 2016_rlp_gruene
                 start_page: 1
                 end_page: 200
             linke:
-                name: linke
+                name: Die Linke
                 file: 2016_rlp_linke
                 start_page: 1
                 end_page: 200
             afd:
-                name: afd
+                name: AfD
                 file: 2016_rlp_afd
                 start_page: 1
                 end_page: 200
             fdp:
-                name: fdp
+                name: FDP
                 file: 2016_rlp_fdp
                 start_page: 1
                 end_page: 200

@@ -86,7 +86,7 @@ class Party(object):
     @property
     def wordcloud_url(self):
         return '{}/{}/{}.png'.format(
-            settings.MEDIA_URL,
+            settings.MEDIA_URL.rstrip('/'),
             settings.APP['config']['wordcloud_dir'],
             self._data['file'],
         )
