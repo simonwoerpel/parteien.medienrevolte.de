@@ -1,10 +1,10 @@
-from __future__ import import unicode_literals
-from django.utils.encoding import import python_2_unicode_compatible
+from __future__ import unicode_literals
 
 import os
 import yaml
 
 from django.conf import settings
+from django.utils.encoding import python_2_unicode_compatible
 from django.utils.functional import cached_property
 
 from .analysis import Corpus, WordCloud
