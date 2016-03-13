@@ -1,0 +1,109 @@
+config:
+    corpora_dir: corpora
+    data_dir: data
+    stopwords_file: corpora/stopwords_ltw.txt
+    wordcloud:
+        background_color: white
+        width: 1280
+        height: 1024
+    wordcloud_dir: wordclouds
+states:
+    sachsen-anhalt:
+        name: Sachsen-Anhalt
+        parties:
+            cdu:
+                name: CDU
+                file: 2016_sn_cdu
+                start_page: 1
+                end_page: 200
+            spd:
+                name: SPD
+                file: 2016_sn_spd
+                start_page: 1
+                end_page: 200
+            gruene:
+                name: gruene
+                file: 2016_sn_gruene
+                start_page: 1
+                end_page: 200
+            linke:
+                name: linke
+                file: 2016_sn_linke
+                start_page: 1
+                end_page: 200
+            afd:
+                name: afd
+                file: 2016_sn_afd
+                start_page: 1
+                end_page: 200
+            fdp:
+                name: fdp
+                file: 2016_sn_fdp
+                start_page: 1
+                end_page: 200
+    baden-wuerttemberg:
+        name: Baden-Württemberg
+        parties:
+            cdu:
+                name: CDU
+                file: 2016_bw_cdu
+                start_page: 1
+                end_page: 200
+            spd:
+                name: SPD
+                file: 2016_bw_spd
+                start_page: 1
+                end_page: 200
+            gruene:
+                name: gruene
+                file: 2016_bw_gruene
+                start_page: 1
+                end_page: 200
+            linke:
+                name: linke
+                file: 2016_bw_linke
+                start_page: 1
+                end_page: 200
+            afd:
+                name: afd
+                file: 2016_bw_afd
+                start_page: 1
+                end_page: 200
+            fdp:
+                name: fdp
+                file: 2016_bw_fdp
+                start_page: 1
+                end_page: 200
+    rheinland-pfalz:
+        name: Rheinland-Pfalz
+        parties:
+            cdu:
+                name: CDU
+                file: 2016_rlp_cdu
+                start_page: 1
+                end_page: 200
+            spd:
+                name: SPD
+                file: 2016_rlp_spd
+                start_page: 1
+                end_page: 200
+            gruene:
+                name: gruene
+                file: 2016_rlp_gruene
+                start_page: 1
+                end_page: 200
+            linke:
+                name: linke
+                file: 2016_rlp_linke
+                start_page: 1
+                end_page: 200
+            afd:
+                name: afd
+                file: 2016_rlp_afd
+                start_page: 1
+                end_page: 200
+            fdp:
+                name: fdp
+                file: 2016_rlp_fdp
+                start_page: 1
+                end_page: 200
