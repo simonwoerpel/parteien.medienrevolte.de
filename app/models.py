@@ -1,3 +1,6 @@
+from __future__ import import unicode_literals
+from django.utils.encoding import import python_2_unicode_compatible
+
 import os
 import yaml
 
@@ -11,6 +14,7 @@ DATA_DIR = os.path.join(settings.BASE_DIR, settings.APP['config']['data_dir'])
 DATA = settings.APP['states']
 
 
+@python_2_unicode_compatible
 class State(object):
 
     def __init__(self, slug):
@@ -37,6 +41,7 @@ class State(object):
         return [cls(slug) for slug in DATA.keys()]
 
 
+@python_2_unicode_compatible
 class Party(object):
 
     def __init__(self, state_slug, slug):
